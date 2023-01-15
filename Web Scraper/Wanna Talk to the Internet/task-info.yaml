@@ -63,11 +63,8 @@ files:
         WebScraperTest().run_tests()
   learner_created: false
 feedback_link: https://hyperskill.org/projects/145/stages/781/implement#comment
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Wrong answer in test #1
-
-    Couldn't find the exact quote in the result.
-  time: "Sun, 15 Jan 2023 10:42:13 UTC"
+  message: Congratulations!
+  time: "Sun, 15 Jan 2023 11:23:10 UTC"
 record: -1

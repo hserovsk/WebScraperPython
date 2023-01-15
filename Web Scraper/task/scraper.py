@@ -1,10 +1,15 @@
+import json
 import requests
 
-def Scraper():
-    user_url = input("Give your url")
-    response = requests.get(user_url)
-    if response.headers['status-code'] == 200:
-        print('success')
-        return response.json()
-    else:
-        print('conection failed')
+#user_url = "http://api.quotable.io/quotes/-CzNrWMGIg8V"
+user_url = input("Put your url below \n")
+response = requests.get(user_url)
+data = response.json()
+print(data)
+#if response.status_code == 200 and "Quote" in data:
+if response.status_code == 200 and "Quote" in data:
+    print('success')
+    print(data)
+
+else:
+    print('Invalid quote resource!')
